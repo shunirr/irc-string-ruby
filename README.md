@@ -1,6 +1,6 @@
 # IrcString
 
-TODO: Write a gem description
+mIRC decoration string parser.
 
 ## Installation
 
