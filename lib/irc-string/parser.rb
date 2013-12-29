@@ -40,7 +40,7 @@ module IrcString
     def parse
       @parsed_strs = []
       style = {}
-      @raw.split(/(#{BOLD}|#{UNDERLINE}|#{INVERSE}|#{CLEAR})/).each do |str|
+      @raw.split(/(#{COLOR_CODE}\d\d?,\d\d?|#{COLOR_CODE}\d\d|#{BOLD}|#{UNDERLINE}|#{INVERSE}|#{CLEAR})/).each do |str|
         loop do
           case str
           when /^#{COLOR_CODE}(\d\d?)(,(\d\d?))?(.*?)(#{COLOR_CODE})?$/
