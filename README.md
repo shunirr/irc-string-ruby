@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-```
+```ruby
 require 'irc-string'
 
 str = IrcString.parse("\u001F\u000304hello\u000F \u0002\u000308,03world\u000F")
