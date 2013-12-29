@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = IrcString::VERSION
   spec.authors       = ["shunirr"]
   spec.email         = ["m@s5r.jp"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{mIRC decoration string parser}
+  spec.summary       = %q{mIRC decoration string parser}
+  spec.homepage      = "https://github.com/shunirr/irc-string-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
