@@ -18,7 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+require 'irc-string'
+
+str = IrcString.parse("\u001F\u000304hello\u000F \u0002\u000308,03world\u000F")
+
+str.to_html # => "<span class=\"underline color_4\">hello</span> <span class=\"bold color_8 bg_color_3\">world</span>"
+
+str.to_html('irc_') # => "<span class=\"irc_underline irc_color_4\">hello</span> <span class=\"irc_bold irc_color_8 irc_bg_color_3\">world</span>"
+```
 
 ## Contributing
 
